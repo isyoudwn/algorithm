@@ -1,3 +1,5 @@
+# 완주하지 못한 선수
+# 풀이 참조
 
 def solution(participant, completion):
 
