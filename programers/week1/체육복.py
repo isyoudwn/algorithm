@@ -21,7 +21,7 @@ def solution(n, lost, reserve):
         if front in _lost:
             _lost.remove(front)
         # r의 behind 값이 _lost에 존재하면, _lost에서 삭제
-        elif front in _lost:
+        elif behind in _lost:
             _lost.remove(behind)
 
     # lost에는 못 빌린 사람만 남음.
