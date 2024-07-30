@@ -1,3 +1,10 @@
+'''
+
+풀이시간 : 29분
+시간복잡도 : n^2
+
+'''
+
 def change_to_binary(arr, n):
     for i in range(0, len(arr)):
         arr[i] = bin(arr[i])[2:]
