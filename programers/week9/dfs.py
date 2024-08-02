@@ -1,9 +1,14 @@
-def dfs(curr_node, graph, visited):
-    visited.append(curr_node)
-    for next_node in graph[curr_node]:
-        if next_node not in visited:
-            dfs(next_node, graph, visited)
+
+
+def dfs(currentNode, visited, graph) :
+
+    visited.append(currentNode)
+
+    for nextNode in graph[currentNode] :
+        if nextNode not in visited:
+            dfs(nextNode, visited, graph)
     return visited
+
 
 def solution():
     graph = {
@@ -14,12 +19,13 @@ def solution():
         'E': ['F'],
         'F': []
     }
-    
+
     visited = []
-    dfs('A', graph, visited)
-    
+
+    dfs('A', visited, graph)
+
     return visited
 
-V = solution()
-
-print(V)
+answer = solution()
+print(answer)
+    
