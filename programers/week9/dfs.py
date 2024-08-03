@@ -1,5 +1,3 @@
-
-
 def dfs(currentNode, visited, graph) :
 
     visited.append(currentNode)
