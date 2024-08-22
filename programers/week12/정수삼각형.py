@@ -1,12 +1,7 @@
 def solution(triangle):
     answer = 0
     N = len(triangle[len(triangle) - 1])
-    dp = []
-    
-    for i in range(0, N):
-        dp.append([])
-        for j in range(0, len(triangle[i])):
-            dp[i].append(-1)
+    dp = triangle.copy()
             
     # base-case
     dp[0][0] = triangle[0][0]
